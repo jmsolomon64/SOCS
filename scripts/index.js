@@ -5,20 +5,31 @@ $(document).ready(() => {
     renderFooter();
     renderCards();
 
-
     function renderHeader() {
         const headDiv = '#header';
         const headPartial = `${partials}header.html`;
-        $(headDiv).load(headPartial);
+        getPartial(headPartial, headDiv);
     }
     function renderFooter() {
         const footDiv = '#footer';
         const footPartial = `${partials}footer.html`;
-        $(footDiv).load(footPartial);
+        getPartial(footPartial, footDiv);
     }
     function renderCards() {
         const cardDiv = '#cards';
         const cardPartial = `${indexPartials}indexCards.html`;
-        $(cardDiv).load(cardPartial);
+        getPartial(cardPartial, cardDiv);
+    }
+    function getPartial(path, div) {
+        $.ajax({
+            url: path, 
+            type: 'GET', 
+            success: (data) => {
+                $(div).html(data); 
+            },
+            error: (xhr, status, error) => {
+                console.error('Error fetching HTML:', error);
+            }
+        });
     }
 });
