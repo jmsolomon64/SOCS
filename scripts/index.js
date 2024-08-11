@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    const partials = '../Partials/';
+    const partials = './Partials/';
     const indexPartials = `${partials}Index/`;
     renderHeader();
     renderFooter();
