@@ -1,0 +1,38 @@
+/* ----- Variables ----- */
+:root {
+    --header: #172922f3;
+    --footer: #4A5D23;
+    --body1: #ACE1AF;
+    --body2: #D0F0C0;
+}
+/* ----- General Styling ----- */
+body {
+    text-align: center;
+    
+    background-color: var(--body2);
+}
+
+.title {
+    background-color: var(--header);
+    color: white;
+}
+
+footer {
+    background-color: var(--footer);
+    color: white;
+}
+
+
+/* ----- Card Styling ----- */
+/*   ---   General    ---   */
+.card {
+    background-color: var(--body1);
+    
+}
+/*   ---  Index Cards ---   */
+#ourMissionCard {
+    margin: auto;
+    width: 75%;
+    max-width: 1000px;
+}
+

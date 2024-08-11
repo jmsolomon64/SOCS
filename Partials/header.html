@@ -1,0 +1,47 @@
+<!-- Bootstrap modal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid" >
+        <!-- Links to Home Page, title of Header -->
+        <a class="navbar-brand" href="#">SOCS</a>
+        <!--- 'Hamburger' button to show/hide header options on small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Content that will be collapsable on small screens -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Home link -->
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- How to help drop down -->
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                How to Help
+            </a>
+            <!-- Drop down options -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Urgently Needed Items</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Always Needed Items</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Donate Today</a></li>
+            </ul>
+            </li>
+            <!-- Event Link -->
+            <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+            </li>
+            <!-- Contact Us Link -->
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <!-- Search Bar -->
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+    </div>
+</nav>
