@@ -27,10 +27,20 @@ footer {
 /*   ---   General    ---   */
 .card {
     background-color: var(--body1);
-    
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.025);
 }
 /*   ---  Index Cards ---   */
 #ourMissionCard {
+    margin: auto;
+    width: 75%; 
+    max-width: 1000px;
+}
+
+#generalInfoCard {
     margin: auto;
     width: 75%; 
     max-width: 1000px;
