@@ -1,32 +1,32 @@
 [
     {
         "title": "Clothes",
-        "description": "Officia voluptate laborum laborum mollit labore proident pariatur eu voluptate enim anim commodo aute. Labore laborum officia enim fugiat enim officia veniam ad reprehenderit. Elit elit nisi reprehenderit aliquip non ipsum ut sunt do esse non.",
-        "subDescription": "Sint esse amet pariatur cillum duis aliqua."
+        "description": "New or lightly used clothes can go a long way to keep someone warm and dry. Any piece of clothing can be helpful, especially socks!",
+        "subDescription": "The name of the org sounds like 'Socks' for a reason"
     },
     {
         "title": "Towels",
-        "description": "Officia voluptate laborum laborum mollit labore proident pariatur eu voluptate enim anim commodo aute. Labore laborum officia enim fugiat enim officia veniam ad reprehenderit. Elit elit nisi reprehenderit aliquip non ipsum ut sunt do esse non.",
-        "subDescription": "Sint esse amet pariatur cillum duis aliqua."
+        "description": "Towels can be used for a variety of different purposes from staying dry to cleaning.",
+        "subDescription": "An often overlooked item"
     },
     {
         "title": "Bedding",
-        "description": "Officia voluptate laborum laborum mollit labore proident pariatur eu voluptate enim anim commodo aute. Labore laborum officia enim fugiat enim officia veniam ad reprehenderit. Elit elit nisi reprehenderit aliquip non ipsum ut sunt do esse non.",
-        "subDescription": "Sint esse amet pariatur cillum duis aliqua."
+        "description": "Sleep is an important part of staying healthy and grounded. Pillows, blankets and sheets can go a long way.",
+        "subDescription": "Can't get on your feet without good sleep"
     },
     {
         "title": "Canned Food",
-        "description": "Officia voluptate laborum laborum mollit labore proident pariatur eu voluptate enim anim commodo aute. Labore laborum officia enim fugiat enim officia veniam ad reprehenderit. Elit elit nisi reprehenderit aliquip non ipsum ut sunt do esse non.",
-        "subDescription": "Sint esse amet pariatur cillum duis aliqua."
+        "description": "Non-perishable foods are easy to transport and store. No one can go without nourishment, even if refrigeration is not available",
+        "subDescription": "No one deserves to go hungry"
     },
     {
         "title": "Pet Food",
-        "description": "Officia voluptate laborum laborum mollit labore proident pariatur eu voluptate enim anim commodo aute. Labore laborum officia enim fugiat enim officia veniam ad reprehenderit. Elit elit nisi reprehenderit aliquip non ipsum ut sunt do esse non.",
-        "subDescription": "Sint esse amet pariatur cillum duis aliqua."
+        "description": "People from all walks of life keep pets. Just because someone is down on their luck doesn't mean their pets should go hungry",
+        "subDescription": "Cats and Dogs deserve to eat too"
     },
     {
         "title": "Snacks",
-        "description": "Officia voluptate laborum laborum mollit labore proident pariatur eu voluptate enim anim commodo aute. Labore laborum officia enim fugiat enim officia veniam ad reprehenderit. Elit elit nisi reprehenderit aliquip non ipsum ut sunt do esse non.",
-        "subDescription": "Sint esse amet pariatur cillum duis aliqua."
+        "description": "Canned food requires work to prepare, like making a fire to heat food up. Snacks are a great way to fight hunger in a hurry",
+        "subDescription": ""
     }
 ]
