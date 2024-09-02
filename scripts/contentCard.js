@@ -1,19 +1,35 @@
-const dataPath = '../data/';
-const cardTop = `
-<body>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">`;
-const cardBottom = `
-        </div>
-    </div>
-</body>
-`;
-//      Currently not used, might implement later though!
+$(document).ready(() => {
+    const partials = './Partials/';
+    const contactPartials = `${partials}contactUs/`;
+    renderHeader();
+    renderFooter();
+    renderCards();
 
-function getIndexCards() {
-    const filePath = `${dataPath}indexCards.json`;
-    let fr = new FileReader()
-    
-    let data = JSON.parse() 
-}
+    function renderHeader() {
+        const headDiv = '#header';
+        const headPartial = `${partials}header.html`;
+        getPartial(headPartial, headDiv);
+    }
+    function renderFooter() {
+        const footDiv = '#footer';
+        const footPartial = `${partials}footer.html`;
+        getPartial(footPartial, footDiv);
+    }
+    function renderCards() {
+        const cardDiv = '#contactInfo';
+        const cardPartial = `${contactPartials}contactCard.html`;
+        getPartial(cardPartial, cardDiv);
+    }
+    function getPartial(path, div) {
+        $.ajax({
+            url: path, 
+            type: 'GET', 
+            success: (data) => {
+                $(div).html(data); 
+            },
+            error: (xhr, status, error) => {
+                console.error('Error fetching HTML:', error);
+            }
+        });
+    }
+});
