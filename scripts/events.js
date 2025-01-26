@@ -1,7 +1,8 @@
 $(document).ready(() => {
     const dataDir = './Data/';
     const partials = './Partials/';
-    
+    const anualRideDir = dataDir + "AnualRide/";
+
     renderHeader();
     renderFooter();
     renderEvents();
@@ -17,20 +18,19 @@ $(document).ready(() => {
         const footPartial = `${partials}footer.html`;
         getPartial(footPartial, footDiv);
     }
-    function renderEvents(){
-        const dataPath = `${dataDir}events.json`;
+    function renderEvents() {
+        const dataPath = `${anualRideDir}events.json`;
         const div = '#cards';
-
         readData(dataPath, div);
     }
-    
+
     //--- Multipurpose Ajax requests
     function getPartial(path, div) {
         $.ajax({
-            url: path, 
-            type: 'GET', 
+            url: path,
+            type: 'GET',
             success: (data) => {
-                $(div).html(data); 
+                $(div).html(data);
             },
             error: (xhr, status, error) => {
                 console.error('Error fetching HTML:', error);
@@ -39,8 +39,8 @@ $(document).ready(() => {
     }
     function readData(dataPath, div) {
         $.ajax({
-            url: dataPath, 
-            type: 'GET', 
+            url: dataPath,
+            type: 'GET',
             success: (data) => {
                 let html = createEventsList(data);
                 $(div).html(html);
@@ -56,27 +56,26 @@ $(document).ready(() => {
         html = '';
         data.forEach(item => {
             html += `
-
-            <div style="width: fit-content; margin: 15px;"  class="card shadow p-3 mb-5 rounded eventCard">
+            <div style="width: fit-content; margin: auto;" id="contactCard" class="card shadow p-3 mb-5 rounded">
             <div class="card-body">
                 <h5 class="card-title"><strong>${item.title}</strong></h5>
                 <hr/>
-                <p class="card-text">${item.description}</p>
-                <p>
-                    <strong>When:</strong> ${item.date} @ ${item.time}
-                </p>
-                <p>
-                    <strong>Where: </strong>
-                    <a href="${item.locationLink}">${item.location}</a>
-                </p>
+                <div id="${item.contentId}">
+                    <img src="${item.flyer}" style="width: 100%;height: auto;"/>
+                    <br/>
+                    <a href="${item.locationLink}" target="_blank">
+                        <strong>Location:</strong> ${item.location}
+                    </a>
+                    <br/>
+                    <a download href="${item.flyerFile}">Download Flyer as PDF</a>
+                </div>
             </div>
-            </div>
-            `;
+            </div>`;
             html += '\n';
         });
         return html;
     }
-
+    
     function createErrorHtml(location) {
         return `<span>Error loading data for ${location}</span>`;
     }
